@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/css/index.css">
+    <title>Buscador de canciones</title>
+</head>
+<body>
+    <header class="header">
+    <div class="header-container">
+        <div class="header-title-container">
+            <h1 class="header-title">Busca la letra de tus canciones favoritas</h1>
+        </div>
+
+        <div class="header-body">
+            <form class="form">
+                <div class="buscar-container">
+                    <input type="search" name="buscar" id="buscar" placeholder="Buscar artistas o canciones">
+                    <i class='bx bx-search-alt-2' id="lupa"></i>
+                </div>
+            </form>
+        </div>
+     </div>
+    </header>
+    
+  
+
+    <main>
+        <div class="resultado-container">
+            <div class="resultado-container-title">
+                <h1 class="resultado-title">Tu Busqueda</h1>
+            </div>
+            
+            
+
+            <div id="generado">
+            </div>
+
+        </div>
+            <!-- The Modal -->
+            <div class="modal" id="myModal">
+                <div class="modal-dialog modal-lg modal-sm">
+                    <div class="modal-content">
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">Letra</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                       
+                        </div>
+
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+  
+        
+    </main>
+
+    
+
+    <script src="/js/index.js"></script>
+    <script src="/js/bootstrap.js"></script>
+</body>
+</html>

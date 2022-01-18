@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/*HEADER*/
+.header {
+    background: linear-gradient(90deg, rgba(171,176,176,0.5) 0%, rgba(216,215,210,0.5) 100%), url(/assets/background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 50vh;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.header-title {
+    font-size: 4rem;
+}
+
+.buscar-container {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+
+#buscar {
+    outline: none;
+    box-shadow: none;
+    border: none;
+    background-color: transparent;
+    width: 30rem;
+    border: none;
+    font-size: 1.5rem;
+    padding: 1.5rem;
+}
+
+#lupa {
+    padding: 1.5rem;
+    font-size: 2rem;
+}
+
+.MensajeDiv {
+    padding: 1rem;
+    margin-top: 2rem;
+    text-align: center;
+    height: auto;
+    width: 95%;
+    font-size: 1.5rem;
+    background-color: red;
+    color: white;
+}
+
+.resultado-container {
+    padding: 1rem;
+}
+
+.resultado-title {
+    padding: 2rem;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.divArtista {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.img-divArtista {
+    width: 100%;
+    height: 30rem;
+    margin-bottom: 1rem;
+}
+
+.divArtista-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+#generado {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5rem;
+}
+
+#demo {
+    height: 30rem;
+    background-color: snow;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-body {
+    text-decoration: none;
+    color: black;
+}
+
+.letra {
+    text-decoration: none;
+}
+
+
+
+/*MQ*/
+@media (max-width: 768px) {
+    .header {
+        width: 100vh;
+    }
+
+    .header-title {
+        text-align: center;
+    }
+
+    .resultado-container {
+       width: 100vh;
+    }
+
+    .resultado-container-title {
+        width: 100%
+    }
+
+    #generado {
+        grid-template-columns: 1fr;
+    }
+
+    .modal-dialog {
+        position: relative;
+        width: 90vh;
+        margin: .5rem;
+        pointer-events: none;
+    }
+}
